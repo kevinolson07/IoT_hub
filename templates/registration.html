@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            form{
+                width:600px;
+                margin:auto;
+            }
+            @media only screen and (max-width: 650px) {
+            [class*="text-center"] {
+                width: 90%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="text-center border border-light p-5" action="/home" method="post">
+                <p class="text-center h4 mb-4">Register</p>
+                <input id="defaultRegisterFormUsername" class="form-control mb-4" type='text' name='uname' placeholder="Username"></input>
+                <input id="defaultRegisterFormemail" class="form-control mb-4" type='text' name='email' placeholder="Email"></input>
+                <input id="defaultRegisterFormPassword" class="form-control mb-4" type='Pasword' name='psw' placeholder="password"></input>
+                <input class="btn btn-info btn-block my-4" type='submit' value="Register Now"></input>
+                <p>Already a member?
+                    <a href="/">Sign In</a>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
